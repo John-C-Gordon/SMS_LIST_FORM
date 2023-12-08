@@ -21,7 +21,7 @@ with col1:
 with col2:
     last = st.text_input('Last Name:')
 
-num = st.text_input('Phone Number *(in the format "8935558787")*:')
+num = st.text_input('Phone Number *(in the format 8935558787)*:')
 
 send = st.button('Add Yourself to Our List!')
 
