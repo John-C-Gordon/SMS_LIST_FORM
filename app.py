@@ -51,4 +51,4 @@ if send and first and last and num:
 if send and (not first or not last or not num):
     st.write('*Please fill in all fields.*')
 
-# st.image('LFR_8458 (1).jpg')
+st.image('LFR_8458 (1).jpg')
