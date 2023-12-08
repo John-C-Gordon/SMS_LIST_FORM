@@ -3,8 +3,8 @@ import pandas as pd
 from streamlit_gsheets import GSheetsConnection
 from twilio.rest import Client
 
-account_sid = 'AC9013123df2b0b98901639b236ce3a1f4'
-auth_token = 'ffd8e21fb908f33e0102ca36bd7023d1'
+account_sid = st.secrets["TWILIO_ACCOUNT_SID"]
+auth_token = st.secrets["TWILIO_AUTH_TOKEN"]
 client = Client(account_sid, auth_token)
 st.title("You're Almost There!")
 col1, col2 = st.columns(2)
