@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from streamlit_gsheets import GSheetsConnection
 from twilio.rest import Client
+import os
 
 account_sid = st.secrets["TWILIO_ACCOUNT_SID"]
 auth_token = st.secrets["TWILIO_AUTH_TOKEN"]
