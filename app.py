@@ -7,6 +7,8 @@ import os
 account_sid = st.secrets["TWILIO_ACCOUNT_SID"]
 auth_token = st.secrets["TWILIO_AUTH_TOKEN"]
 client = Client(account_sid, auth_token)
+
+st.set_page_config(page_title='Cougar Beatrice SMS List Form', page_icon='🍔')
 st.title("You're Almost There!")
 col1, col2 = st.columns(2)
 
@@ -14,7 +16,7 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 
 existing_data = conn.read(worksheet="Sheet1", usecols=list(range(3)), ttl=5)
 existing_data = existing_data.dropna(how="all")
-st.set_page_config(page_title='Cougar Beatrice SMS List Form', page_icon='🍔')
+
 with col1:
     first = st.text_input('First Name:')
 
