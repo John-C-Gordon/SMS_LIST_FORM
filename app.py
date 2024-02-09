@@ -14,7 +14,7 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 
 existing_data = conn.read(worksheet="Sheet1", usecols=list(range(3)), ttl=5)
 existing_data = existing_data.dropna(how="all")
-st.set_page_config(page_title='Cougar Beatrice SMS List Form', page_icon=✉️)
+st.set_page_config(page_title='Cougar Beatrice SMS List Form', page_icon='🍔')
 with col1:
     first = st.text_input('First Name:')
 
